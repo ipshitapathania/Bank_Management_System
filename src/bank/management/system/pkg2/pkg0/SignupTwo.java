@@ -26,6 +26,8 @@ public class SignupTwo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -116,6 +118,7 @@ public class SignupTwo extends javax.swing.JFrame {
         });
         getContentPane().add(jComboReligion, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 275, -1));
 
+        buttonGroup1.add(jRadioButton1);
         jRadioButton1.setText("yes");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,12 +152,15 @@ public class SignupTwo extends javax.swing.JFrame {
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Non-Graduate", "Graduate", "Post-Graduate", "Doctrate", "Others" }));
         getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 275, -1));
 
+        buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("No");
         getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 450, 49, -1));
 
+        buttonGroup2.add(jRadioButton3);
         jRadioButton3.setText("yes");
         getContentPane().add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 520, 51, -1));
 
+        buttonGroup2.add(jRadioButton4);
         jRadioButton4.setText("No");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,6 +175,11 @@ public class SignupTwo extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("NEXT");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 550, -1, -1));
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 0, -1, -1));
 
@@ -197,7 +208,14 @@ public class SignupTwo extends javax.swing.JFrame {
 
     private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
         // TODO add your handling code here:
+       
     }//GEN-LAST:event_jRadioButton4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+         setVisible(false);
+        new SignupThree().setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -235,6 +253,8 @@ public class SignupTwo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
