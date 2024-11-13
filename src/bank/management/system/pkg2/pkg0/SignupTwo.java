@@ -134,7 +134,7 @@ public class SignupTwo extends javax.swing.JFrame {
 
         jComboBox2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<150000", "<200000", "<250000", "<500000", "<1000000" }));
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 275, -1));
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 275, 30));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel12.setText("Qualification:");
@@ -147,11 +147,11 @@ public class SignupTwo extends javax.swing.JFrame {
                 jComboBox3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 275, -1));
+        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 275, 30));
 
         jComboBox4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Non-Graduate", "Graduate", "Post-Graduate", "Doctrate", "Others" }));
-        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 275, -1));
+        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 275, 30));
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("No");
@@ -169,8 +169,8 @@ public class SignupTwo extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 520, 52, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 275, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, 275, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 275, 30));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 410, 275, 30));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setFont(new java.awt.Font("Ebrima", 1, 24)); // NOI18N
