@@ -48,7 +48,7 @@ public class BalanceEnquiry extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 550, 110, 40));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/kriti/atm.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bank/management/system/pkg2/pkg0/atm.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 1000));
 
         pack();
