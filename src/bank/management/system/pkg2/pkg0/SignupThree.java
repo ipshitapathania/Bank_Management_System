@@ -37,23 +37,24 @@ public class SignupThree extends javax.swing.JFrame {
         jRadioButton4 = new javax.swing.JRadioButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
-        jButton1 = new javax.swing.JButton();
         jCheckBox2 = new javax.swing.JCheckBox();
         jCheckBox3 = new javax.swing.JCheckBox();
         jCheckBox4 = new javax.swing.JCheckBox();
         jCheckBox5 = new javax.swing.JCheckBox();
         jCheckBox6 = new javax.swing.JCheckBox();
         jCheckBox7 = new javax.swing.JCheckBox();
-        jButton2 = new javax.swing.JButton();
         jCheckBox8 = new javax.swing.JCheckBox();
         jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -96,14 +97,9 @@ public class SignupThree extends javax.swing.JFrame {
         jLabel4.setText("(Your 16-digit Card number)");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 249, 173, 16));
 
-        jLabel5.setText("XXXX-XXXX-XXXX-4184");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 217, 153, 24));
-
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel6.setText("it would appear on ATM card/cheque Book and Staements");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 250, 322, -1));
-
-        jLabel7.setText("XXXX");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 290, 37, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
@@ -122,17 +118,6 @@ public class SignupThree extends javax.swing.JFrame {
         jCheckBox1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jCheckBox1.setText("ATM CARD");
         getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 372, 106, -1));
-
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("CANCEL");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(354, 546, -1, -1));
 
         jCheckBox2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jCheckBox2.setText("INTERNET BANKING");
@@ -162,6 +147,21 @@ public class SignupThree extends javax.swing.JFrame {
         });
         getContentPane().add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(372, 417, 157, -1));
 
+        jCheckBox8.setText("I hereby declares tat the above entered details correct to the best of my knowledge");
+        getContentPane().add(jCheckBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 499, 520, -1));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("CANCEL");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -171,22 +171,44 @@ public class SignupThree extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 546, -1, -1));
 
-        jCheckBox8.setText("I hereby declares tat the above entered details correct to the best of my knowledge");
-        getContentPane().add(jCheckBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 499, 520, -1));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("XXXX-XXXX-XXXX-4184");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 770, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(185, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addGap(103, 103, 103)
+                        .addComponent(jButton1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(283, 283, 283))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(216, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(235, 235, 235)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addGap(19, 19, 19))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 600));
@@ -205,9 +227,19 @@ public class SignupThree extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Your response has been recorded");
+        if(jTextField1.getText().length()<=0    ){
+            JOptionPane.showMessageDialog(null, "All fiels are required");
+        }
+        else{
+         JOptionPane.showMessageDialog(this, "Your response has been recorded");
+    }             
+        //JOptionPane.showMessageDialog(this, "Your response has been recorded");
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -271,5 +303,6 @@ public class SignupThree extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

@@ -9,12 +9,12 @@ package bank.management.system.pkg2.pkg0;
  * @author anshi
  */
 import javax.swing.JOptionPane;
-public class Depoist extends javax.swing.JFrame {
+public class Deposit extends javax.swing.JFrame {
 
     /**
-     * Creates new form Depoist
+     * Creates new form Deposit
      */
-    public Depoist() {
+    public Deposit() {
         initComponents();
     }
 
@@ -71,8 +71,7 @@ public class Depoist extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 249, 37, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bank/management/system/pkg2/pkg0/atm.jpg"))); // NOI18N
-        jLabel4.setText("jLabel4");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 920));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 920));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -104,20 +103,21 @@ public class Depoist extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Depoist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Deposit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Depoist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Deposit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Depoist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Deposit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Depoist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Deposit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Depoist().setVisible(true);
+                new Deposit().setVisible(true);
             }
         });
     }

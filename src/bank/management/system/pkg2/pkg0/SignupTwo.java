@@ -4,6 +4,8 @@
  */
 package bank.management.system.pkg2.pkg0;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author anshi
@@ -60,7 +62,7 @@ public class SignupTwo extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel1.setText("PAGE 2 : Additonal Details");
+        jLabel1.setText("PAGE 2 : Additional Details");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 0, 477, -1));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, -1, -1));
 
@@ -90,7 +92,7 @@ public class SignupTwo extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel9.setText("Aadhar Number:");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 406, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 411, -1, 30));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel10.setText("Senior Citizen:");
@@ -126,13 +128,13 @@ public class SignupTwo extends javax.swing.JFrame {
                 jRadioButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 450, 98, -1));
+        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 460, 98, 40));
 
         jComboBox1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "General", "OBC", "SC", "ST", "Other" }));
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 275, -1));
 
-        jComboBox2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jComboBox2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<150000", "<200000", "<250000", "<500000", "<1000000" }));
         getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 275, 30));
 
@@ -140,22 +142,22 @@ public class SignupTwo extends javax.swing.JFrame {
         jLabel12.setText("Qualification:");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 233, -1, -1));
 
-        jComboBox3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jComboBox3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Salaried", "Self-Employed", "Business", "Student", "Retired", "Others" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 275, 30));
+        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 275, 30));
 
-        jComboBox4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jComboBox4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Non-Graduate", "Graduate", "Post-Graduate", "Doctrate", "Others" }));
-        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 275, 30));
+        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 275, 30));
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("No");
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 450, 49, -1));
+        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 450, 49, 60));
 
         buttonGroup2.add(jRadioButton3);
         jRadioButton3.setText("yes");
@@ -168,7 +170,7 @@ public class SignupTwo extends javax.swing.JFrame {
                 jRadioButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 520, 52, -1));
+        getContentPane().add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 521, 52, 20));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 275, 30));
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 410, 275, 30));
 
@@ -217,8 +219,12 @@ public class SignupTwo extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        if(jTextField1.getText().length()<=0  || jTextField2.getText().length()<=0  ){
+            JOptionPane.showMessageDialog(null, "All fiels are required");
+        }
+        else{
          setVisible(false);
-        new SignupThree().setVisible(true);
+        new SignupThree().setVisible(true);}
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -251,7 +257,7 @@ public class SignupTwo extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SignupTwo().setVisible(true);
+            new SignupTwo().setVisible(true);
             }
         });
     }

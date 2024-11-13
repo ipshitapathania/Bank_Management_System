@@ -39,7 +39,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="PAGE 2 : Additonal Details"/>
+        <Property name="text" type="java.lang.String" value="PAGE 2 : Additional Details"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -141,7 +141,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="36" y="406" width="-1" height="-1"/>
+          <AbsoluteConstraints x="36" y="411" width="-1" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -212,7 +212,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="280" y="450" width="98" height="-1"/>
+          <AbsoluteConstraints x="280" y="460" width="98" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -243,7 +243,7 @@
     <Component class="javax.swing.JComboBox" name="jComboBox2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="14" style="1"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="5">
@@ -280,7 +280,7 @@
     <Component class="javax.swing.JComboBox" name="jComboBox3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="14" style="1"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="6">
@@ -301,14 +301,14 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="280" y="290" width="275" height="30"/>
+          <AbsoluteConstraints x="280" y="280" width="275" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="14" style="1"/>
+          <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="5">
@@ -325,7 +325,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="280" y="230" width="275" height="30"/>
+          <AbsoluteConstraints x="280" y="210" width="275" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -338,7 +338,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="510" y="450" width="49" height="-1"/>
+          <AbsoluteConstraints x="510" y="450" width="49" height="60"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -367,7 +367,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="510" y="520" width="52" height="-1"/>
+          <AbsoluteConstraints x="510" y="521" width="52" height="20"/>
         </Constraint>
       </Constraints>
     </Component>
